@@ -1,6 +1,6 @@
 provider "consul" 
 {
-address = "192.168.93.128:8500"
+address = "server ip:8500"
 #address = "c11fdd8c206a:8500"
 datacenter = "dc1"
 }
@@ -26,7 +26,7 @@ region = "us-east-1"
 }
 
 resource "aws_s3_bucket" "b" {
-  bucket = "venkat-s3-my-tf-test-bucket-one"
+  bucket = "s3bucketname"
   acl    = "private"
   
 tags = {
