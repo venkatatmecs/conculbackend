@@ -1,3 +1,4 @@
+# make ensure that consul must be installed already and the secret and access key will be stored in it
 provider "consul" 
 {
 address = "server ip:8500"
